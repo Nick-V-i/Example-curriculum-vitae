@@ -1,0 +1,380 @@
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", "DM Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Bold'),
+  url("../fonts/Poppins-Bold.woff2") format("woff2"),
+  url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Medium'),
+  url("../fonts/Poppins-Medium.woff2") format("woff2"),
+  url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'),
+  url("../fonts/Poppins-Regular.woff2") format("woff2"),
+  url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Light'),
+  url("../fonts/Poppins-Light.woff2") format("woff2"),
+  url("../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "DM Sans", sans-serif;
+
+  --solid-heading: #42446e;
+	--dark-content: #666;
+	--solid-heading-dark-mode: #ccc;
+	--light-content: #a7a7a7;
+	--dark-mode: #191919;
+	--button-text: #018c0f;
+	--button-success: #d7ffe0;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54%;
+  color: var(--solid-heading);
+}
+
+.descr {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 81%;
+  text-align: center;
+  color: var(--dark-content);
+}
+
+.svg {
+  min-width: 30px;
+  min-height: 30px;
+}
+
+
+
+/* header */
+
+.header {
+  padding-top: 40px;
+  margin-bottom: 220px;
+}
+
+
+.header__container {
+  align-items: center;
+  display: flex;
+}
+
+.header__nav {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.nav__item {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--dark-content);
+  flex: 0 0 auto;
+}
+
+.nav__link {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #e70faa;
+}
+
+.projects__descr-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.projects__descr-link:hover {
+  color: #e70faa;
+}
+
+.svg {
+  transition: transform 0.3s ease;
+}
+
+.nav__link-social {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link-social:hover .svg {
+  transform: scale(1.1);
+  background-color: #e70faa;
+  border-radius: 100%;
+
+}
+
+.nav__link-social:hover  {
+  color: #e70faa;
+}
+
+.nav__list-social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+
+}
+
+/* section intro */
+
+.intro {
+  margin-bottom: 350px;
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.intro__descr-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.intro__descr {
+  font-family: var(--font-family);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  line-height: 121%;
+  color: var(--solid-heading);
+  padding: 0;
+  margin: 0;
+}
+
+.intro__name {
+  background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro__avatar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* section tech-stack */
+
+.tech-stack {
+  margin-bottom: 215px;
+}
+
+.tech-stack-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+
+.tech-stack__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+/* section projects */
+
+.projects {
+  margin-bottom: 200px;
+}
+
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 95px;
+}
+
+.projects__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 65px;
+  column-gap: 20px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.projects__item {
+  border-radius: 30px 30px 30px 30px;
+  flex: 0 1 calc(33.333% - 20px);
+  box-shadow: 0px 10px 100px rgba(0, 37, 38, 0.5);
+}
+
+.projects__wrapper-container {
+  padding: 26px;
+}
+
+.projects__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #000000;
+}
+
+.projects__subdescr {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #666666;
+}
+
+.projects__spec {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.projects__descr-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: underline;
+}
+
+.projects__wrapper--under-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* footer */
+
+.footer__nav {
+  display: flex;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.footer__item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #42446E;
+}
+
+.footer__line {
+  border-bottom: 1px solid #666666 ;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.footer__under-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer__descr {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer__descr-style {
+  background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

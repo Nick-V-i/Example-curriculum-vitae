@@ -1,0 +1,151 @@
+@media (max-width: 992px) {
+	.header__nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+	}
+
+  .nav__list {
+    margin-right: 0;
+  }
+
+  .nav__list-contacts {
+    flex-direction: column;
+  }
+
+  .intro__descr {
+    font-size: 38px;
+  }
+
+  .projects__item {
+    flex: 0 1 calc(50% - 20px);
+
+  }
+
+  .footer__nav {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .footer__list {
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+
+  .footer__wrapper-underline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__under-line  {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .footer__descr {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .intro__container {
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    margin-bottom: 60px;
+  }
+
+  .projects__item {
+    flex: 0 1 100%;
+  }
+
+  .projects__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
+
+@media (max-width: 580px) {
+	.nav__item {
+    flex: 0 0 auto;
+    display: inline-block;
+  }
+
+  .nav__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header__nav {
+    overflow-x: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer__nav-scroll {
+    overflow-x: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer__nav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+@media (max-width: 410px) {
+	 .intro__avatar-wrapper {
+    display: none;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .intro__descr {
+    font-size: 28px;
+  }
+
+  .descr {
+    font-size: 16px;
+  }
+
+  .tech-stack-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .tech-stack {
+    margin-bottom: 60px;
+  }
+
+  .projects-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .projects  {
+    margin-bottom: 60px;
+  }
+
+
+}
+
+
